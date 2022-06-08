@@ -24,6 +24,12 @@ class Jogo(object):
          ["Melhorar o desempenho sem que haja desperdício de energia", "Um termo para troca de equipamentos antigos por novos", "Um sistema que busca emular", "Atualização do Sistema Operacional, para uma melhor performance"]],
         ["Qual das opções não é considerada Tecnologia Verde?",
          ["Todas são considerados tecnologias verdes", "Carros Elétricos e Hibridos", "Bioinseticidas", "Arquitetura Sustentável"]],
+        ["Quais vantagens de adotar a TI verde na empresa?",
+         ["Diminui custos da empresa/maior desempenho de seus funcionários.", "Diminui a produtividade de cada funcionario da empresa.", "Nenhuma das alternativas anteriores.", "Arquitetura Sustentável"]],
+        ["Qual das informações a seguir não é uma prática de TI verde?",
+         ["Uso de folhas de papel.", "Usar lâmpadas fluorescentes.", "Desligar os equipamentos quando não estão sendo usados.", "Monitorar automaticamente a energia disponível nas máquinas."]],
+        ["Qual das informações a seguir é uma boa prática para discarte de eletrônicos?",
+         ["Repasse/doação.", "Descarte na lixeira de lixo.", "Abandono em um ambiente público.", "Colocar junto de outros reciclaveis orgânicos."]],
     ]
     # Variável de pontos:
     pontucao = -1
@@ -104,7 +110,7 @@ while True:
             # Atualização da pergunta na tela quando selecionada a resposta certa:
             jogo.criarTelaPergunta()
             # Função para conta de repostas certas, podendo assim apresentar a tela de vitória.
-            if jogo.pontucao == 7:
+            if jogo.pontucao == 10:
                 jogo.criarTelaFinalWin()
                 jogo.numeroPergunta = -1
                 jogo.pontucao = -1
