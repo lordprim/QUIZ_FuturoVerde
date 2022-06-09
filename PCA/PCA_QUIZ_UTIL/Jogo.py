@@ -87,7 +87,7 @@ class Jogo(object):
         corBranco = (255, 255, 255)
         corPreta = (0, 0, 0)
         corAzul = (72,209,204)
-        self.tela.setImagem("TelaFinal.png", 0, 0)
+        self.tela.setImagem("Fim_jogo.jpg", 0, 0)
         self.tela.desenharBotao(corAzul, 260, 525, 270, 50, True)
         self.tela.criarTexto("arial", 40, "Jogar novamente", 1, corBranco, 268, 525)
         self.tela.criarTexto("arial", 40, "Você perdeu!!!", 1, corPreta, 290, 470)
